@@ -1,0 +1,23 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: serviceRedis
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.37.116.241:8848
+
+  redis:
+    database: 0
+    host: 101.37.116.241
+    port: 6379
+
+#    redisson:
+#      file: classpath:redisson.yml
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-wait: -1
+        time-between-eviction-runs: 8

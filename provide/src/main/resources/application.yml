@@ -1,0 +1,12 @@
+server:
+  port: 8000
+server-url:
+  nacos-user-service: http://serviceRedis
+
+spring:
+  application:
+    name: provide
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.37.116.241:8848
